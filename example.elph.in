@@ -1,0 +1,16 @@
+ &INPUTPH
+   outdir          = './' 
+   prefix          = 'pb' 
+   fildyn          = 'pb.dyn' 
+   fildvscf        = 'pb.dv' 
+   ldisp           = .true.
+   electron_phonon = 'interpolated' 
+   el_ph_nsigma    = 10 
+   el_ph_sigma     = 0.005 
+   amass(1)        = 207.2
+   verbosity       = 'high' 
+   nq1             = 3 
+   nq2             = 3 
+   nq3             = 3 
+ /
+

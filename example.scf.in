@@ -1,0 +1,33 @@
+ &CONTROL
+   title           = 'Pb' 
+   calculation     = 'scf' 
+   restart_mode    = 'from_scratch' 
+   wf_collect      = .true. 
+   outdir          = './scf_a2F' 
+   pseudo_dir      = '/home/khluise/pseudo/' 
+   prefix          = 'pb' 
+   verbosity       = 'high' 
+   nstep           = 200 
+ /
+ &SYSTEM
+   ibrav           = 2
+   celldm(1)       = 9.12356468
+   nat             = 1
+   ntyp            = 1
+   ecutwfc         = 50 
+   ecutrho         = 400 
+   occupations     = 'smearing' 
+   degauss         = 0.03 
+   smearing        = 'marzari-vanderbilt' 
+ /
+ &ELECTRONS
+   conv_thr        = 1.D-9 
+   mixing_beta     = .7 
+ /
+ATOMIC_SPECIES
+   Pb  207.20000  pb_s.UPF 
+ATOMIC_POSITIONS alat 
+   Pb      0.000000000    0.000000000    0.000000000    
+K_POINTS automatic 
+  8 8 8   0 0 0 
+
