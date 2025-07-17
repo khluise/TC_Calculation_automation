@@ -3,8 +3,8 @@
    calculation     = 'scf' 
    restart_mode    = 'from_scratch' 
    wf_collect      = .true. 
-   outdir          = './scf_a2F' 
-   pseudo_dir      = '/home/khluise/pseudo/' 
+   outdir          = './' 
+   pseudo_dir      = './' 
    prefix          = 'pb' 
    verbosity       = 'high' 
    nstep           = 200 

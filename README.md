@@ -1,6 +1,6 @@
 # Quantum ESPRESSO TC Calculation Workflow Automation
 
-This repository provides a script to automate the workflow for superconducting transition temperature (Tc) calculations using Quantum ESPRESSO. The script orchestrates a sequence of calculations involving `pw.x`, `ph.x`, `q2r.x`, `matdyn.x`, and `lambda.x`, handling input preparation, output parsing, and file management for a streamlined, reproducible process.
+This repository provides a Python script to automate the workflow for superconducting transition temperature (Tc) calculations using Quantum ESPRESSO. The script orchestrates a sequence of calculations involving `pw.x`, `ph.x`, `q2r.x`, `matdyn.x`, and `lambda.x`, handling input preparation, output parsing, and file management for a streamlined, reproducible process.
 
 ## Features
 - **Interactive Input**: Prompts the user for all necessary parameters, including input files, calculation settings, and smearing methods.
@@ -25,9 +25,11 @@ This repository provides a script to automate the workflow for superconducting t
    - [INPUT_PH documentation](https://www.quantum-espresso.org/Doc/INPUT_PH.html)
    - [INPUT_MATDYN documentation](https://www.quantum-espresso.org/Doc/INPUT_MATDYN.html)
 
-2. **Run the Script**:
-   ```sh
-   ./QE_TC_calulation_workflow.x
+2. **Run the Script**: Before running the script make it into an executable(Do this only once)
+   ```chmod +x python3 QE_TC_calulation_workflow.x
+   ```
+   Run the script by:
+   ```./python3 QE_TC_calulation_workflow.x
    ```
 3. **Follow Prompts**: The script will interactively request:
    - Number of CPU cores
