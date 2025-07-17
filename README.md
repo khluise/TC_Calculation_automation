@@ -26,7 +26,8 @@ This repository provides a Python script to automate the workflow for supercondu
    - [INPUT_MATDYN documentation](https://www.quantum-espresso.org/Doc/INPUT_MATDYN.html)
 
 2. **Run the Script**:
-   ```./python3 QE_TC_calulation_workflow.x
+   ```sh
+   ./python3 QE_TC_calulation_workflow.x
    ```
 3. **Follow Prompts**: The script will interactively request:
    - Number of CPU cores
