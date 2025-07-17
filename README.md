@@ -27,7 +27,7 @@ This repository provides a Python script to automate the workflow for supercondu
 
 2. **Run the Script**:
    ```sh
-   ./python3 QE_TC_calulation_workflow.x
+   ./QE_TC_calulation_workflow.x
    ```
 3. **Follow Prompts**: The script will interactively request:
    - Number of CPU cores
